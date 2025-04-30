@@ -3,6 +3,7 @@ import SubscriptionCard from "./SubscriptionCard";
 import "./SubscriptionList.css"
 import "./SubscriptionCard.css"
 import teaImages from "../assets/teaImages"
+import subscriptionImages from "../assets/subscriptionImages"
 import fallbackImage from "../assets/fallback.jpg" 
 
 function SubscriptionList() {
@@ -24,7 +25,14 @@ function SubscriptionList() {
     return (
         <main className="subscriptions-list">
             <header>
-                <h1> Subscriptions </h1>
+              <h1>Rock & Brew: Legendary Tea Subscriptions</h1>
+              <p className="mission">
+                <em>
+                  Donovan once told me John Lennon had 10 cups of tea the night he wrote 'Come Together'.
+                  Rumor has it, the Abbey Road Break Room is still hiding his secret stash of bags... we miss you John!
+                </em>
+              </p>
+              <h1> Subscriptions List </h1>
             </header>
             <select onChange={(e) => setFilterStatus(e.target.value)}>
               <option value="all">All</option>
@@ -34,7 +42,7 @@ function SubscriptionList() {
             <section>
               {filteredSubscriptions.map((sub) => {
                 const title = sub.attributes.title
-                const image = teaImages[title] || fallbackImage
+                const image = subscriptionImages[title] || fallbackImage
 
                 return (
                   <SubscriptionCard
