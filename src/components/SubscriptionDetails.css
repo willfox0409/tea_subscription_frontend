@@ -1,0 +1,48 @@
+.subscription-details {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.tea-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.subscription-details h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.subscription-details h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+
+.subscription-details p {
+  margin: 0.3rem 0;
+  font-size: 1rem;
+}
+
+.status-toggle-btn {
+  margin-top: 2rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #f4a261;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.status-toggle-btn:hover {
+  background-color: #e76f51;
+}
