@@ -7,6 +7,7 @@ function SubscriptionCard({ id, title, frequency, status, price, imgSrc }) {
     <article className="subscription-card">
       <img src={imgSrc} alt={title} className="tea-image" />
       <h2>{title}</h2>
+      <p>ID: {id}</p>
       <p>Status: {status}</p>
       <p>Frequency: {frequency}</p>
       <p>Price: ${price}</p>
