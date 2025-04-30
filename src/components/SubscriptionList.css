@@ -1,0 +1,24 @@
+
+.subscriptions-list {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.subscriptions-list header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.subscriptions-list select {
+  display: block;
+  margin: 0 auto 2rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.subscriptions-list section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
