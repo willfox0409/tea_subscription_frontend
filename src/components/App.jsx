@@ -1,27 +1,27 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import SubscriptionList from './components/SubscriptionList'
-import SubscriptionDetails from './components/SubscriptionDetails'
-import TeasView from './components/TeasView'
-import CustomersView from './components/CustomersView'
+import { Routes, Route, NavLink } from 'react-router-dom'
+import SubscriptionList from './SubscriptionList'
+import SubscriptionCard from './SubscriptionCard'
+import SubscriptionDetails from './SubscriptionDetails'
+import TeasView from './TeasView'
+import CustomersView from './CustomersView'
 import './App.css'
 
 function App() {
-  
   return (
-      <Router>
-        <nav>
-          <NavLink to="/">Subscriptions</NavLink>
-          <NavLink to="/teas">Teas</NavLink>
-          <NavLink to="/customers">Customers</NavLink>
-        </nav>
-          <Routes>
-              <Route path="/" element={<SubscriptionList />} /> 
-              <Route path="/subscriptions/:id" element={<SubscriptionDetails />} /> 
-              <Route path="/teas" element={<TeasView/>} />
-              <Route path="/customers" element={<CustomersView />} />
-          </Routes>
-      </Router>
+    <>
+      <nav>
+        <NavLink to="/">Subscription List</NavLink>
+        <NavLink to="/teas">Tea List</NavLink>
+        <NavLink to="/customers">Customer List</NavLink>
+      </nav>
+      <Routes>
+        <Route path="/" element={<SubscriptionList />} />
+        <Route path="/subscriptions/:id" element={<SubscriptionDetails />} />
+        <Route path="/teas" element={<TeasView />} />
+        <Route path="/customers" element={<CustomersView />} />
+      </Routes>
+    </>
   )
 }
 
-export default App;
+export default App
